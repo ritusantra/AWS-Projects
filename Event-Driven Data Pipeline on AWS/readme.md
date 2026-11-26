@@ -6,12 +6,12 @@ Designed and implemented an automated, serverless ETL data pipeline using AWS se
 
 ## Architecture & Workflow
 
-### 1. Data Ingestion (Landing Layer)
+### 1. Data Ingestion
 - CSV files are uploaded to the landing layer of an Amazon S3 bucket, serving as the initial data ingestion point for raw datasets.
 
 ### 2. Automated Data Cleaning
-- An S3 event triggers an AWS Lambda function when new CSV files are uploaded.
-- The Lambda function initiates an AWS Glue ETL job to clean and transform the raw CSV data.
+- An S3 event triggers an AWS Lambda function when new files are uploaded.
+- The Lambda function initiates an AWS Glue ETL job to clean and transform the raw data.
 - The processed data is stored in a separate cleaned S3 bucket.
 
 ### 3. Data Aggregation
@@ -45,4 +45,11 @@ Designed and implemented an automated, serverless ETL data pipeline using AWS se
 - Separation of raw, cleaned, and aggregated datasets.
 - Centralized metadata management using AWS Glue Data Catalog.
 - Serverless data processing and SQL-based analytics through Amazon Athena.
-```
+
+
+## AWS Views
+<img width="1913" height="658" alt="image" src="https://github.com/user-attachments/assets/5d32e786-d3a1-4d6e-898e-08816111cac6" />
+<img width="1239" height="637" alt="image" src="https://github.com/user-attachments/assets/2275eca4-510f-4f7e-9ec0-1e8d442bbc6c" />
+<img width="1549" height="666" alt="image" src="https://github.com/user-attachments/assets/8255330c-5558-4180-bf70-820602617eb1" />
+<img width="1567" height="718" alt="image" src="https://github.com/user-attachments/assets/32050e23-9e01-430b-9e0e-d35cf4528703" />
+
